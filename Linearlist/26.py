@@ -1,3 +1,4 @@
+# This solution exceed the time limit, cannot be accepted!
 class Solution(object):
     def removeDuplicates(self, nums):
         if len(nums):
