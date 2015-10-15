@@ -14,20 +14,20 @@ class Solution(object):
         if head == None:
             return None
         cur = head
-        index = 1
+        length = 1
         while cur.next:
-            index = index+1
+            length += 1
             cur = cur.next
-        if n==index:
+        if n==length:
             return head.next
         else:
             last = head
-            for i in range(index-n-1):
+            for i in range(length-n-1):
                 last = last.next
             remove = last.next
             if remove.next:
                 last.next = remove.next
             else:
                 last.next = None
-        return head
+            return head
 
