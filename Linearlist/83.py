@@ -25,15 +25,4 @@ class Solution(object):
                 pend = pend.next
         return head
 
-head = ListNode(1)
-head.next = ListNode(1)
-head.next.next = ListNode(4)
-head.next.next.next = ListNode(4)
-
-obj = Solution()
-a = obj.deleteDuplicates(head)
-while a:
-    print a.val
-    a =a.next
-
 
