@@ -27,14 +27,3 @@ class Solution(object):
                 pend = pend.next
         cur.next = last
         return cur
-
-head = ListNode(1)
-head.next = ListNode(2)
-head.next.next = ListNode(3)
-head.next.next.next = ListNode(4)
-
-obj = Solution()
-a = obj.reverseList(head)
-while a:
-    print a.val
-    a =a.next
