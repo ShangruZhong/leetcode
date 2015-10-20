@@ -1,3 +1,11 @@
+"""
+    2. Add Two Numbers
+
+    From now on, start linked-list practice
+
+    @author: Shangru
+    @date: 2015/10/11
+"""
 # Definition for singly-linked list.
 class ListNode(object):
     def __init__(self, x):

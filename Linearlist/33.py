@@ -1,3 +1,9 @@
+"""
+    33. Search in Rotated Sorted Array
+
+	@author: Shangru
+	@date: 2015/09/15
+"""
 class Solution(object):
     def search(self, nums, target):
         """

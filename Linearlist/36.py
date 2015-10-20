@@ -1,3 +1,9 @@
+"""
+    36. Valid Sudoku
+
+    @author: Shangru
+    @date: 2015/09/30
+"""
 class Solution(object):
     def isValidSudoku(self, board):
         """

@@ -1,3 +1,9 @@
+"""
+    82. Remove Duplicates from Sorted List II
+
+    @author: Shangru
+    @date: 2015/10/16
+"""
 # Definition for singly-linked list.
 class ListNode(object):
     def __init__(self, x):

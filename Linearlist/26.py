@@ -1,3 +1,9 @@
+"""
+    26. Remove Duplicates from Sorted Array
+
+    @author: Shangru
+    @date: 2015/09/13
+"""
 class Solution(object):
     def removeDuplicates(self, nums):
         if len(nums)==0:

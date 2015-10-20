@@ -1,3 +1,9 @@
+"""
+	15. 3Sum
+
+	@author: Shangru
+	@date: 2015/09/19
+"""
 class Solution(object):
     def threeSum(self, nums):
         """

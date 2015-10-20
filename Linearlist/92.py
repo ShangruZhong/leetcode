@@ -1,3 +1,9 @@
+"""
+    92. Reverse Linked List II
+
+    @author: Shangru
+    @date: 2015/10/13
+"""
 # Definition for singly-linked list.
 class ListNode(object):
     def __init__(self, x):

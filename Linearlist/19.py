@@ -1,3 +1,9 @@
+"""
+    19. Remove Nth Node From End of List
+
+    @author: Shangru
+    @date: 2015/10/15
+"""
 # Definition for singly-linked list.
 class ListNode(object):
     def __init__(self, x):

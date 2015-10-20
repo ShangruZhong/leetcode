@@ -1,3 +1,9 @@
+"""
+    1. Two Sum
+
+    @author: Shangru
+    @date: 2015/09/18
+"""
 class Solution(object):
     def twoSum(self, nums, target):
         """

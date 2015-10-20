@@ -1,3 +1,9 @@
+"""
+    27. Remove Element
+
+    @author: Shangru
+    @date: 2015/09/23
+"""
 class Solution(object):
     def removeElement(self, nums, val):
         """
