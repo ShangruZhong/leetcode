@@ -38,6 +38,3 @@ class Solution(object):
 
         return result
 
-nums = [-1,0,1,2,-1,4]
-obj = Solution()
-print obj.threeSum(nums)

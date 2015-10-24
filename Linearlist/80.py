@@ -22,7 +22,4 @@ class Solution(object):
             else:
             	count = count+1
         return index+1
-    
-a=[1,1,1,1,2,2,2,2,3,3,3,3]
-obj = Solution()
-print obj.removeDuplicates(a)
+

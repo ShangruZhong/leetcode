@@ -17,7 +17,3 @@ class Solution(object):
                 nums[index] = nums[i]
                 index += 1
         return index
-
-a = [1,2,3,4,5,6]
-obj = Solution()
-print obj.removeElement(a,2)

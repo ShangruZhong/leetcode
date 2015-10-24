@@ -33,7 +33,3 @@ class Solution(object):
                 else:
                     board[i][j] = tmp
         return True
-
-board = [".87654321","2........","3........","4........","5........","6........","7........","8........","9........"]
-a = Solution()
-print a.isValidSudoku(board)

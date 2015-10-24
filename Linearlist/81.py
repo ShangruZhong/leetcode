@@ -25,8 +25,3 @@ class Solution(object):
 			else: #nums[left]=nums[mid]
 				left += 1
 		return False
-
-a = [1,1,3,1,1,1,2]
-obj = Solution()
-print obj.search(a,2)
-print obj.search(a,4)

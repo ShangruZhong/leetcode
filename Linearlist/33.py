@@ -28,9 +28,3 @@ class Solution(object):
     			else:
     				right = mid
     	return -1
-
-
-a = [4,5,6,7,0,1,2]
-obj = Solution()
-print obj.search(a,0)
-print obj.search(a,3)

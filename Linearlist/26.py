@@ -14,7 +14,3 @@ class Solution(object):
                 index += 1
                 nums[index] = nums[i]            
         return index+1
-    
-a=[1,1,1,1,2,2,2,2,3,3,3,3]
-obj = Solution()
-print obj.removeDuplicates(a)
