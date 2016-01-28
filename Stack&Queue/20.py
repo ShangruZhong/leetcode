@@ -1,5 +1,5 @@
 """
-	22. Valid Parentheses
+	20. Valid Parentheses
 	
 	Using stack to judge Parentheses Matching Problem
 	@author: Shangru
