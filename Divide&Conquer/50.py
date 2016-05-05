@@ -3,6 +3,7 @@
 
 	x^n = x^(n/2) * x^(n/2) * x^(n%2)
 	O(log n)
+	@date: 2016/05/05
 """
 class Solution(object):
     def myPow(self, x, n):
