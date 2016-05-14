@@ -1,6 +1,7 @@
 """
 	23. Merge k Sorted Lists
 
+	Divide & Conquer
 	@author: Shangru
 	@date: 2016/05/12
 """
