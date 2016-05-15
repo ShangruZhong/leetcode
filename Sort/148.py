@@ -2,7 +2,7 @@
 	148. Sort List
 
 	O(nlogn) with constant space
-	Single link list: Merge Sort (reuse mergeTwoLists method)
+	Single link list: Merge Sort
 	Double link list: Quick Sort
 
 	@date: 2016/05/14
