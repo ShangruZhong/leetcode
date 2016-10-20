@@ -17,18 +17,18 @@ class Solution(object):
             if nums[r1] < nums[r1 + 1]:
                 pivot = r1
                 break
-            r1 -= 1
-        if r1 == -1: # list decreases, max permutation
-            nums[:] = list(reversed(nums[:])) # reversed the whole list
+            else:
+                r1 -= 1
+        if r1 == -1: # list decrease, max permutation
+            nums[:] = list(reversed(nums[:]))
             return
         r2 = len(nums) - 1
         while r2 > pivot:
-            if nums[r2] > nums[pivot]: # from right to left, the first one larger than nums[pivot]
-                change = r2  # nums[change] > nums[pivot]
+            if nums[r2] > nums[pivot]:
+                change = r2
                 break
             else:
                 r2 -= 1
-        nums[pivot], nums[change] = nums[change], nums[pivot] # after swap, the list[pivot+1:] decreases
-        nums[pivot + 1:] = list(reversed(nums[pivot + 1:])) # reversed the list[pivot:]
-        return
-        
+        nums[pivot], nums[change] = nums[change], nums[pivot]
+        nums[pivot + 1:] = list(reversed(nums[pivot + 1:]))
+        return        
