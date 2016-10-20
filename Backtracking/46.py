@@ -1,7 +1,8 @@
 """
 	46. Permutations
 
-	Backtracking
+    Given [1,2,3], return all the permutations
+	Backtracking & Enumeration
 	@date: 2016/10/07
 """
 class Solution(object):
