@@ -11,7 +11,7 @@ class Solution(object):
         :type n: int
         :rtype: List[int]
         """
-        num = 1 << n
+        num = 1 << n # num = 2^n
         result = []
         for i in xrange(num):
             result.append((i >> 1) ^ i)
