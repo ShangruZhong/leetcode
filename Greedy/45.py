@@ -1,7 +1,7 @@
 """
 	45. Jump Game II
 
-	@date: 2016/05.31
+	@date: 2016/05/31
 """
 class Solution(object):
     def jump(self, nums):
