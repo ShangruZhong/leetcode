@@ -21,3 +21,13 @@ class Solution(object):
             node.val = node.next.val
             node = node.next
         prev.next = None
+
+    def deleteNode(self, node):
+        """
+        :type node: ListNode
+        :rtype: void Do not return anything, modify node in-place instead.
+        """
+        prev = node
+        node.val = node.next.val
+        node = node.next
+        prev.next = node.next
