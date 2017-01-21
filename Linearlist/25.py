@@ -8,12 +8,17 @@
     @author: Shangru
     @date: 2015/10/20
 """
+"""
+    25. Reverse Nodes in k-Group
 
+    Update solution
+    @date: 2017/01/22
+"""
 # Definition for singly-linked list.
-class ListNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.next = None
+# class ListNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
 
 class Solution(object):
     def reverseKGroup(self, head, k):
@@ -22,15 +27,44 @@ class Solution(object):
         :type k: int
         :rtype: ListNode
         """
-        if head == None or head.next == None:
+        if k < 2: 
             return head
-        dummy = ListNode(0)
-        dummy.next = head
-        cur = dummy
-        while k and cur.next and cur.next:
-            tmp = cur.next.next
-            cur.next.next = tmp.next
-            tmp.next = cur.next
-            cur.next = tmp
-            cur = cur.next
-            k -= 1
+        
+        cur = head
+        next = None
+        group_start = None
+        prev_last = None
+        
+        count = 1
+        while cur:
+            next = cur.next
+            if count == k:
+                # initialize group_start & head !!!!
+                if prev_last == None:
+                    group_start = head
+                    head = cur
+                else:
+                    group_start = prev_last.next # update group_start before grouping
+                self.reverse(prev_last, group_start, cur, next)
+                prev_last = group_start # update prev_last after grouping
+                count = 0
+            count += 1
+            cur = next
+        return head
+    
+    def reverse(self, prev_last, group_start, group_end, next_first):
+        
+        prev = group_start
+        cur = group_start.next
+        next = None
+        
+        while cur != next_first:
+            next = cur.next
+            cur.next = prev
+            prev = cur
+            cur = next
+        # after reverse, group_end->new head, group_start->new tail
+        if prev_last:
+            prev_last.next = group_end
+        group_start.next = next_first
+    
