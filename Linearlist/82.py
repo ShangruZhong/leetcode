@@ -32,3 +32,19 @@ class Solution(object):
             else:
                 head = head.next
         return dummy.next
+
+    # Solution 2
+    def deleteDuplicates(self, head):
+        dummy = ListNode(-1)
+        dummy.next = head
+        prev = dummy
+        while head:
+            while head.next and head.val == head.next.val:
+                head = head.next
+            if prev.next != head:
+                prev.next = head.next
+                head = prev.next
+            else:    
+                prev = head
+                head = head.next
+        return dummy.next 
