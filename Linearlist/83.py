@@ -31,4 +31,16 @@ class Solution(object):
                 pend = pend.next
         return head
 
-
+    # Solution 2
+    def deleteDuplicates(self, head):
+        dummy = ListNode(-1)
+        dummy.next = head
+        prev = dummy
+        while head:
+            while head.next and head.val == head.next.val:
+                head = head.next
+            if prev.next != head:
+                prev.next = head
+            prev = head
+            head = head.next
+        return dummy.next
