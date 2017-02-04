@@ -20,3 +20,20 @@ class Solution(object):
                 res = i - left + 1
         return res
         
+    # update
+    def lengthOfLongestSubstring(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        max_len = 0
+        left = 0
+        last_pos = {}
+        for i in xrange(len(s)):
+            if s[i] in last_pos and last_pos[s[i]] >= left:
+                left = last_pos[s[i]] + 1 # reset left
+            else:
+                max_len = max(max_len, i - left + 1) #  max_len
+            last_pos[s[i]] = i
+
+        return max_len
