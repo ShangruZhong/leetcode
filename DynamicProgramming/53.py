@@ -1,9 +1,9 @@
 """
     53. Maximum Subarray
 
-    Classical DP problem
-    sum[i] = max(sum[i - 1] + nums[i], nums[i])
-    @date: 2016/11/20
+    if dp[i-1] > 0: dp[i] = dp[i-1]+nums[i]
+    else: dp[i] = nums[i]
+    @date: 2017/02/07
 """
 class Solution(object):
     def maxSubArray(self, nums):
@@ -11,12 +11,10 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        if not len(nums):
-            return 0
-        s = nums[0]
-        smax = nums[0]
+        if len(nums) == 0:
+            return nums
+        dp = [0]*len(nums)
+        dp[0] = nums[0]
         for i in xrange(1, len(nums)):
-            s = max(s + nums[i], nums[i])
-            if s > smax:
-                smax = s
-        return smax
+            dp[i] = nums[i] + (dp[i - 1] if dp[i - 1] > 0 else 0)
+        return max(dp)
