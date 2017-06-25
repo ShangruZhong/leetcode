@@ -2,7 +2,7 @@
 	129. Sum Root to Leaf Numbers
 
 	@author: Shangru
-	@date: 2016/05.10
+	@date: 2016/05/10
 """
 # Definition for a binary tree node.
 # class TreeNode(object):
